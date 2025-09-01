@@ -36,7 +36,7 @@ const buttonVariant = cva(
           default: "",
           customBtn: "shadow-md",
           hamburgerBtn: "block md:hidden",
-          tabBtn: "", 
+          shadowBtn: "bg-white text-gray-900 hover:bg-gray-300 px-2 border-2 rounded-lg", 
         },
         theme: {
           light: "",
@@ -58,6 +58,16 @@ const buttonVariant = cva(
           theme: "dark",
           className: "bg-blue-500 hover:bg-blue-400 text-gray-300 hover:text-gray-200 shadow-gray-200",
         },
+        {
+          variant: "shadowBtn",
+          theme: "light",
+          className: "bg-blue-900 hover:bg-blue-700 text-gray-200 shadow-gray-900",
+        },
+        {
+          variant: "shadowBtn",
+          theme: "dark",
+          className: "bg-white text-gray-900 hover:bg-gray-300 px-2 border-2 rounded-lg",
+        }
       ],
       defaultVariants: {
         variant: "customBtn",

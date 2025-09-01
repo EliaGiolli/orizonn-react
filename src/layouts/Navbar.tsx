@@ -27,16 +27,27 @@ function Navbar() {
     <nav className={`${initialTheme === 'light' ? 'bg-white border-b-gray-200 shadow-gray-500' : 'bg-gray-900 text-gray-100 border-b-gray-950 shadow-gray-200'} 
         w-full min-h-20 flex justify-around items-center text-center border-b-2  shadow-md relative`}>
         {/* DESKTOP NAV */}
-        <Link to='/' className={`uppercase font-bold text-2xl md:text-3xl ${initialTheme === 'light' ? 'text-gray-900': 'text-gray-200'}`}>Orizon</Link>
+        <Link to='/' className={`uppercase font-bold text-2xl md:text-3xl ${initialTheme === 'light' ? 'text-gray-900': 'text-gray-200'}`}>
+            <img src="/assets/Orizon-logo.jpg" className="h-15 w-25 p-2"/>
+        </Link>
         <ul className="md:flex gap-4 hidden">
             <li className={`textl-xl md:text-lg px-4 ${initialTheme ==='light' ? 'hover:bg-blue-900 hover:text-white':'hover:bg-blue-300 hover:text-gray-900'} hover:rounded-md`}>
-                <Link to='/'>Chi siamo</Link>
+                <Link to='/'>Home</Link>
             </li>
             <li className={`textl-xl md:text-lg px-4 ${initialTheme ==='light' ? 'hover:bg-blue-900 hover:text-white':'hover:bg-blue-300 hover:text-gray-900'} hover:rounded-md`}>
-                <Link to='/products'>Il nostro prodotto</Link>
+                <Link to='/destinations'>Destinations</Link>
             </li>
             <li className={`textl-xl md:text-lg px-4 ${initialTheme ==='light' ? 'hover:bg-blue-900 hover:text-white':'hover:bg-blue-300 hover:text-gray-900'} hover:rounded-md`}>
-                <Link to='/contacts'>Contatti</Link>
+                <Link to='/flights'>Flights</Link>
+            </li>
+            <li className={`textl-xl md:text-lg px-4 ${initialTheme ==='light' ? 'hover:bg-blue-900 hover:text-white':'hover:bg-blue-300 hover:text-gray-900'} hover:rounded-md`}>
+                <Link to='/booking'>Booking</Link>
+            </li>
+            <li className={`textl-xl md:text-lg px-4 ${initialTheme ==='light' ? 'hover:bg-blue-900 hover:text-white':'hover:bg-blue-300 hover:text-gray-900'} hover:rounded-md`}>
+                <Link to='/blog'>Blog</Link>
+            </li>
+            <li className={`textl-xl md:text-lg px-4 ${initialTheme ==='light' ? 'hover:bg-blue-900 hover:text-white':'hover:bg-blue-300 hover:text-gray-900'} hover:rounded-md`}>
+                <Link to='/contacts'>Contacts</Link>
             </li>
         </ul>
 
@@ -57,17 +68,27 @@ function Navbar() {
         {/* MOBILE NAV */}
         {
             isOpen && (
-                <div className="bg-white flex flex-col justify-center items-center text-center w-full 
-                    absolute top-full right-0 z-50 p-8 border-t-2 border-t-gray-200 shadow-lg shadow-gray-500">
+                <div className={`${initialTheme === 'light' ? 'bg-white border-t-gray-200 shadow-gray-500' : 'bg-gray-900 border-t-gray-950 shadow-gray-200'} 
+                    flex flex-col justify-center items-center text-center w-full 
+                    absolute top-full right-0 z-50 p-8 border-t-2 shadow-lg`}>
                     <ul className="flex flex-col items-center text-center gap-4">
-                        <li className="textl-xl md:text-lg px-4 hover:bg-amber-500 hover:text-white hover:rounded-md">
-                            <Link to='/about'>Chi siamo</Link>
+                        <li className={`textl-xl md:text-lg px-4 ${initialTheme === 'light' ? 'hover:bg-blue-900 hover:text-white' : 'hover:bg-blue-300 hover:text-gray-900'} hover:rounded-md`}>
+                            <Link to='/'>Home</Link>
                         </li>
-                        <li className="textl-xl md:text-lg px-4 hover:bg-amber-500 hover:text-white hover:rounded-md">
-                            <Link to='/products'>Funzionalità</Link>
+                        <li className={`textl-xl md:text-lg px-4 ${initialTheme === 'light' ? 'hover:bg-blue-900 hover:text-white' : 'hover:bg-blue-300 hover:text-gray-900'} hover:rounded-md`}>
+                            <Link to='/destinations'>Destinations</Link>
                         </li>
-                        <li className="textl-xl md:text-lg px-4 hover:bg-amber-500 hover:text-white hover:rounded-md">
-                            <Link to='/contacts'>Contatti</Link>
+                        <li className={`textl-xl md:text-lg px-4 ${initialTheme === 'light' ? 'hover:bg-blue-900 hover:text-white' : 'hover:bg-blue-300 hover:text-gray-900'} hover:rounded-md`}>
+                            <Link to='/flights'>Flights</Link>
+                        </li>
+                        <li className={`textl-xl md:text-lg px-4 ${initialTheme === 'light' ? 'hover:bg-blue-900 hover:text-white' : 'hover:bg-blue-300 hover:text-gray-900'} hover:rounded-md`}>
+                            <Link to='/booking'>Booking</Link>
+                        </li>
+                        <li className={`textl-xl md:text-lg px-4 ${initialTheme === 'light' ? 'hover:bg-blue-900 hover:text-white' : 'hover:bg-blue-300 hover:text-gray-900'} hover:rounded-md`}>
+                            <Link to='/blog'>Blog</Link>
+                        </li>
+                        <li className={`textl-xl md:text-lg px-4 ${initialTheme === 'light' ? 'hover:bg-blue-900 hover:text-white' : 'hover:bg-blue-300 hover:text-gray-900'} hover:rounded-md`}>
+                            <Link to='/contacts'>Contacts</Link>
                         </li>
                     </ul>
                 </div>

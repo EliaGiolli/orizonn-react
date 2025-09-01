@@ -1,8 +1,10 @@
-
+import HeroSection from "../layouts/HeroSection";
 
 function Homepage() {
   return (
-    <div>Homepage</div>
+    <>
+    <HeroSection />
+    </>
   )
 }
 
