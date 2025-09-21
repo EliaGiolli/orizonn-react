@@ -1,6 +1,7 @@
 import HeroSection from "../layouts/HeroSection";
 import BookingParallax from "../components/BookingParallax";
 import BookingSection from "../components/BookingSection";
+import Destinations from "../components/Destinations";
 
 function Homepage() {
   return (
@@ -8,6 +9,7 @@ function Homepage() {
       <HeroSection />
       <BookingParallax />
       <BookingSection />
+      <Destinations />
     </>
   )
 }

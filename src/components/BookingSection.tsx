@@ -137,7 +137,7 @@ function BookingSection() {
               
               {/* Destination */}
               <div>
-                <label className="block text-gray-900 dark:text-white font-medium mb-3 flex items-center">
+                <label className="text-gray-900 dark:text-white font-medium mb-3 flex items-center">
                   <FaMapMarkedAlt className="mr-2 text-blue-600" />
                   Where do you want to go?
                 </label>
@@ -158,7 +158,7 @@ function BookingSection() {
               {/* Date Range */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-gray-900 dark:text-white font-medium mb-3 flex items-center">
+                  <label className="text-gray-900 dark:text-white font-medium mb-3 flex items-center">
                     <FaCalendarAlt className="mr-2 text-blue-600" />
                     Check-in
                   </label>
@@ -171,7 +171,7 @@ function BookingSection() {
                   />
                 </div>
                 <div>
-                  <label className="block text-gray-900 dark:text-white font-medium mb-3 flex items-center">
+                  <label className="text-gray-900 dark:text-white font-medium mb-3 flex items-center">
                     <FaClock className="mr-2 text-blue-600" />
                     Check-out
                   </label>
@@ -188,7 +188,7 @@ function BookingSection() {
               {/* Duration & People */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-gray-900 dark:text-white font-medium mb-3 flex items-center">
+                  <label className="text-gray-900 dark:text-white font-medium mb-3 flex items-center">
                     <FaClock className="mr-2 text-blue-600" />
                     Duration
                   </label>
@@ -206,7 +206,7 @@ function BookingSection() {
                   </select>
                 </div>
                 <div>
-                  <label className="block text-gray-900 dark:text-white font-medium mb-3 flex items-center">
+                  <label className="text-gray-900 dark:text-white font-medium mb-3 flex items-center">
                     <FaUsers className="mr-2 text-blue-600" />
                     Travelers
                   </label>
@@ -225,7 +225,7 @@ function BookingSection() {
 
               {/* Price Range */}
               <div>
-                <label className="block text-gray-900 dark:text-white font-medium mb-3 flex items-center">
+                <label className="text-gray-900 dark:text-white font-medium mb-3 flex items-center">
                   <FaDollarSign className="mr-2 text-blue-600" />
                   Price Range: ${searchData.priceRange[0].toLocaleString()} - ${searchData.priceRange[1].toLocaleString()}
                 </label>
