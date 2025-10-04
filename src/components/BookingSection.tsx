@@ -79,14 +79,14 @@ function BookingSection() {
             </div>
 
             {/* Content Below Image */}
-            <div className="text-inherit space-y-6">
+            <div className="space-y-6">
               <h2 className="text-3xl lg:text-4xl font-bold leading-tight">
                 Plan Your Dream
                 <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600">
                   Adventure
                 </span>
               </h2>
-              <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+              <p className="text-lg text-gray-900 dark:text-gray-300 leading-relaxed">
                 From the vibrant streets of South America to the ancient temples of Asia, 
                 we craft unforgettable journeys tailored to your dreams. Let us handle the details 
                 while you focus on creating memories.

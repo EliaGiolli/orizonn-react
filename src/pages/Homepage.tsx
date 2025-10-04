@@ -1,7 +1,9 @@
 import HeroSection from "../layouts/HeroSection";
 import BookingParallax from "../components/BookingParallax";
 import BookingSection from "../components/BookingSection";
+import BlogSection from "../components/BlogSection";
 import Destinations from "../components/Destinations";
+import CallToActionSection from "../components/CallToActionSection";
 
 function Homepage() {
   return (
@@ -10,6 +12,8 @@ function Homepage() {
       <BookingParallax />
       <BookingSection />
       <Destinations />
+      <BlogSection />
+      <CallToActionSection />
     </>
   )
 }

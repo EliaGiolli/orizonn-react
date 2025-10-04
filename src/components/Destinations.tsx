@@ -1,7 +1,7 @@
 import { destinations, cityImages } from "../data/destinations";
 import { useDestinationsSelect } from "../custom hooks/useDestinationSelect";
 import { FaGlobe, FaSearch } from "react-icons/fa";
-
+import { getBookingUrl } from "../helpers/bookingUrlHelper";
 function Destinations() {
   const {
     selectedContinent,
@@ -16,20 +16,7 @@ function Destinations() {
     images,
   } = useDestinationsSelect(destinations, cityImages);
 
-  // Build booking URL
-  const getBookingUrl = () => {
-    if (selectedCity) {
-      return `/booking?city=${encodeURIComponent(selectedCity)}`;
-    }
-    if (selectedCountry) {
-      return `/booking?country=${encodeURIComponent(selectedCountry)}`;
-    }
-    if (selectedContinent) {
-      return `/booking?continent=${encodeURIComponent(selectedContinent)}`;
-    }
-    return "#";
-  };
-
+  
   return (
     <section className="relative overflow-hidden py-16 px-2 md:px-8">
       <div className="relative z-10 max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-start px-2">
